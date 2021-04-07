@@ -19,19 +19,20 @@ namespace coding_practice_unittests
         private int Partition(int[] array, int left, int right)
         {
             var pivot = array[right];
-            var checkItem = left -1;
+            var lastLessThanPivotItem = left -1;
 
-            for(var compareItem = left; compareItem <= right; compareItem++)
+            for(var currentItem = left; currentItem <= right -1; currentItem++)
             {
-                if(array[compareItem] < pivot)
+                if(array[currentItem] < pivot)
                 {
-                    checkItem++;
-                    Swap(array, checkItem, compareItem);
+                    lastLessThanPivotItem++;
+                    Swap(array, lastLessThanPivotItem, currentItem);
                 }
             }
-
-            Swap(array, checkItem + 1, right);
-            return (checkItem + 1);
+            
+            lastLessThanPivotItem++;
+            Swap(array, lastLessThanPivotItem, right);
+            return (lastLessThanPivotItem);
         }
 
         private void Swap(int[] array, int i, int j)
