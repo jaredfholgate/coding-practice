@@ -1,4 +1,4 @@
-namespace coding_practice_unittests
+namespace coding_practice
 {
     public class Sorter
     {

@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Linq;
 
-namespace coding_practice_unittests
+namespace coding_practice.unittests
 {
     [TestClass]
     public class MissingArrayItemsTests
