@@ -1,6 +1,6 @@
 namespace coding_practice
 {
-    public class Sorter
+    public class QuickSorter
     {
         public void QuickSort(int[] array)
         {

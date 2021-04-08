@@ -5,15 +5,15 @@ using System.Linq;
 namespace coding_practice.unittests
 {
     [TestClass]
-    public class QuickSortTests
+    public class MergeSortTests
     {
         [TestMethod]
-        public void CanPerformQuickSort()
+        public void CanPerformMergeSort()
         {
             var array = new int[] { 2, 5, -4, 11, 0, 18, 22, 67, 51, 6 }; 
             var arrayToSort = new int[] { 2, 5, -4, 11, 0, 18, 22, 67, 51, 6 };
-            var sorter = new QuickSorter();
-            sorter.QuickSort(arrayToSort);
+            var sorter = new MergeSorter();
+            sorter.MergeSort(arrayToSort);
 
             Assert.AreEqual(array.Length, arrayToSort.Length);
 
