@@ -47,7 +47,7 @@ This is where a function quickly normalises after a couple of iterations. This i
 
 Some functions are O(n * log(n)), which are less optimal, but still logarithmic. An exmaple of O(n * log(n)) is Quick Sort.
 
-## Examples
+## Examples from https://www.bigocheatsheet.com/
 
 ### Data Structures
 ![alt text](BigODataStructures.png "Data Structures")
