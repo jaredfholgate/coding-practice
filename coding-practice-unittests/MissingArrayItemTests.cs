@@ -33,7 +33,6 @@ namespace coding_practice.unittests
 
             Assert.AreEqual(first, result.first);
             Assert.AreEqual(second, result.second);
-
         }
     }
 }
